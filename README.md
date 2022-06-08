@@ -1,4 +1,4 @@
-### Javascript
+### Javascript (Exemplos na branch master)
 
 - Instale a extensão [Code Runner](https://github.com/formulahendry/vscode-code-runner) no vscode. (Ctrl + Alt + N)
 
