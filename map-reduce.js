@@ -149,12 +149,25 @@ console.log('')
 console.log('')
 
 // Map
-
 const multiplicationUsingMap = numbers.map(function(value) {
   return value * 2
 })
 console.log('### map example: return numbers multiplicated per 2 ###')
 console.log('array', numbers)
 console.log('new array', multiplicationUsingMap)
+console.log('')
+console.log('')
+
+const numberLessthanTenUsingMap = numbers.map(function(value) {
+  return value < 10 ? value : null
+}).reduce(function(group, newValue) {
+  if(newValue != null) {
+    group.push(newValue)
+  }
+  return group
+}, [])
+console.log('### map example: return numbers less than 10 ###')
+console.log('array', numbers)
+console.log('new array', numberLessthanTenUsingMap)
 console.log('')
 console.log('')
